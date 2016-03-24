@@ -1,0 +1,774 @@
+body {
+    margin: auto;
+    font-size: 100%;
+    line-height: 1.4em;
+    /*background: #D8D5D2;*/
+    /*background: silver url(concrete_seamless.png) fixed;*/
+    /*background: silver url(school.png) fixed;*/
+    background: silver url(concrete_seamless.png) fixed;
+    color: #FFF;
+}
+
+h1 {
+    color:#333;
+}
+
+p {
+    color:#222;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+/*.malaysia{*/
+/*    padding:20px 0;*/
+/*}*/
+
+.lead {
+    padding:10px 0 1px 0;
+}
+
+.footer {
+    font-size: 1em;
+    color: #FFF;
+    margin: 0.5em;
+}
+
+#timeline {
+    margin: 50px 0;
+}
+
+.post img {
+    width: 100%;
+}
+
+.post {
+  background: #ffffff;
+  margin: 8px 5px;
+  /*box-shadow: 0px 0px 0px rgba(0,0,0,0.3);*/
+  z-index: 999;
+  border-radius: 10px;
+}
+
+/*
+   Spezific styling for salvattore
+   Feel free to edit it as you like
+   More info at http://salvattore.com
+ */
+
+/* Salvattore Base Styles */
+.column {
+    float: left;
+}
+
+.size-1of4 {
+    width: 25%;
+}
+
+.size-1of3 {
+    width: 33.333%;
+}
+
+.size-1of2 {
+    width: 50%;
+}
+
+/* Configurate salvattore with media queries */
+@media screen and (max-width: 450px) {
+    #posts[data-columns]::before {
+        content: '2 .column.size-1of2';
+        padding: 1px;
+    }
+    
+    .post{
+    	padding: 0px;
+    	/*padding-top: 1px;*/
+    }
+    
+    .ioh-logo-img {
+        padding: 10px;
+        background: #D8D5D2;
+        width: 160px;
+        height: 120px;
+        border-radius: 8px;
+        /*content: '2 .column.size-1of2';*/
+    }
+    
+    .ch-item .avatar-title {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 850px) {
+    #posts[data-columns]::before {
+        content: '3 .column.size-1of3';
+    }
+    
+    .post{
+    	padding: 9.9px;
+    }
+    
+}
+
+@media screen and (min-width: 851px) {
+    #posts[data-columns]::before {
+        content: '4 .column.size-1of4';
+    }
+    
+    .post{
+    	/*padding: 3.2px;*/
+    	/*padding-top: 2px;*/
+    	/*background: #D8D5D2;*/
+    	/*background: #ffffff;*/
+    	/*background: rgba(255,255,255,0.8);*/
+    	/*background: silver url(lightpaperfibers.png) fixed;*/
+    }
+    
+}
+
+/* 這邊開始就是我加的啦~*/
+
+/*.avatar-img {*/
+/*    border-radius: 10px;*/
+/*}*/
+
+.ioh-logo-img {
+    padding: 20px;
+    background: #D8D5D2;
+    border-radius: 8px;
+}
+
+#posts {
+    /*background: #ffffff;*/
+    /*background: #f7f7f7;*/
+    background: rgba(247,247,247,0.8);
+    /*background: rgba(255,255,255,0.8);*/
+    /*background: #ffffff;*/
+    /*background: silver url(lightpaperfibers.png) fixed;*/
+    padding: 7px;
+    min-height: 1700px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+}
+
+/* 講座人物的頭像相關設定 */
+
+/*.avatar-link {*/
+/*    display: block;*/
+/*    background: #de8e50;*/
+/*    border-radius: 15px;*/
+/*    color: white;*/
+    /* 讓顏色變化有漸層效果~ */
+/*    transition-duration: .3s;*/
+/*    transition-timing-function: linear;*/
+/*}*/
+
+.avatar-img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.avatar-title {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-family: 'Microsoft JhengHei';
+    /*background: #de8e50;*/
+    /*background: rgba(228, 17, 94, 0.69);*/
+    background: rgba(204,5,0,0.7);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.avatar-link:hover {
+    background: #E4115E;
+    /*background: rgba(64,180,160, 0.8);*/
+    color: white;
+    text-decoration: none;
+    
+}
+
+.avatar-link:visited {
+    text-decoration: none;
+}
+
+/* Button測試功能~*/
+
+button {
+    border: 0;
+    background: #0087cc;
+    border-radius: 4px;
+    box-shadow: 0 8px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 4px 18px;
+    transition: all .13s linear;
+}
+
+button:active {
+    box-shadow: 0 2px 0 #006599;
+    transform: translateY(3px);
+}
+
+.button-title {
+    margin: 0;
+    padding: 4px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-family: 'Microsoft JhengHei';
+}
+
+
+/* avatar在hover時會產生的特效~ */
+.ch-item {
+    width: 100%;
+    height: 100%;
+	border-radius: 10px;
+	position: relative;
+	cursor: default;
+	box-shadow: inset 0 0 0 0px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+/*.ch-img-1 {*/
+/*    background-image: url(http://ioh.tw/assets/03-成大醫學系-林協霆-Hsieh-Ting-Lin-大頭照.jpg); */
+/*}*/
+
+.test-img {
+    position: relative;
+}
+
+.test-info {
+    position: absolute;
+    top: 0px;
+    background: rgba(64,180,160, 0.8);
+	width: inherit;
+	height: inherit;
+	border-radius: 10px;
+	opacity: 0;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.8s ease-in-out;
+	-webkit-transform: scale();
+	-moz-transform: scale();
+	-ms-transform: scale();
+	-o-transform: scale();
+	transform: scale();
+	-webkit-backface-visibility: hidden;
+}
+
+/* .ch-img-2 { 
+  background-image: url(http://i.imm.io/LpYu.jpeg) 
+}
+
+.ch-img-3 { 
+  background-image: url(http://i.imm.io/LpYB.jpeg) 
+} */
+
+/*.ch-info {*/
+/*	position: absolute;*/
+/*	background: rgba(64,180,160, 0.8);*/
+/*	width: inherit;*/
+/*	height: inherit;*/
+/*	border-radius: 10px;*/
+/*	opacity: 0;*/
+/*	-webkit-transition: all 0.4s ease-in-out;*/
+/*	-moz-transition: all 0.4s ease-in-out;*/
+/*	-ms-transition: all 0.4s ease-in-out;*/
+/*	-o-transition: all 0.4s ease-in-out;*/
+/*	transition: all 0.4s ease-in-out;*/
+/*	-webkit-transform: scale();*/
+/*	-moz-transform: scale();*/
+/*	-ms-transform: scale();*/
+/*	-o-transform: scale();*/
+/*	transform: scale();*/
+/*	-webkit-backface-visibility: hidden;*/
+/*}*/
+
+.test-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 24px;
+	margin: 0 30px;
+	text-align: center;
+	padding: 120px 0px 10px 0px;
+	/*height: 140px;*/
+    font-family: 'Microsoft JhengHei';
+	text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.avatar-school {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: normal;
+	margin: 0 30px;
+	font-size: 18px;
+	text-align: center;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+    font-family: 'Microsoft JhengHei';
+  	  -webkit-transition: all 1s ease-in-out 0.2s;
+	     -moz-transition: all 1s ease-in-out 0.2s;
+	      -ms-transition: all 1s ease-in-out 0.2s;
+	       -o-transition: all 1s ease-in-out 0.2s;
+	       transition: all 1s ease-in-out 0.2s;
+}
+
+.test-info button {
+    padding: 4px 18px;
+    /*margin: 15px;*/
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+}
+
+/*.test-info p a {*/
+/*	display: block;*/
+/*	color: #fff;*/
+/*	color: rgba(255,255,255,0.7);*/
+/*	font-style: normal;*/
+/*	font-weight: 700;*/
+/*	text-transform: uppercase;*/
+/*	font-size: 9px;*/
+/*	letter-spacing: 1px;*/
+/*	padding-top: 4px;*/
+/*	font-family: sans-serif;*/
+/*}*/
+
+/*.test-info p a:hover {*/
+/*	color: #fff222;*/
+/*	color: rgba(255,242,34, 0.8);*/
+/*}*/
+
+.ch-item:hover { 
+    box-shadow: 0 0 0 0px rgba(255,255,255,0.1), 0 0px 0px rgba(0,0,0,0.1) inset; 
+}
+
+.ch-item:hover .test-info {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+}
+
+.ch-item:hover .avatar-school { 
+    opacity: 1;
+/*   font-size: 14px; */
+}
+
+.no-cssanimations .support-note span.no-cssanimations,
+.no-csstransforms .support-note span.no-csstransforms,
+.no-csstransforms3d .support-note span.no-csstransforms3d,
+.no-csstransitions .support-note span.no-csstransitions { 
+    display: block;
+}
+
+/*body {*/
+/*	font-family: Cambria, Georgia, serif;*/
+/* 	background: #f9f9f9 url(http://i.imm.io/LpUT.jpeg); */
+/*	font-weight: 300;*/
+/*	font-size: 15px;*/
+/*	color: #333;*/
+/*	-webkit-font-smoothing: antialiased;*/
+/*	overflow-y: scroll;*/
+/*	overflow-x: hidden;*/
+/*}*/
+
+/*.ch-grid li {*/
+/*	width: 100%;*/
+/*	height: 100%;*/
+/*	display: inline-block;*/
+/*	margin: 0;*/
+/*}*/
+
+/*a {*/
+/*	color: #555;*/
+/*	text-decoration: none;*/
+/*}*/
+
+
+/* .container {
+	width: 100%;
+	position: relative;
+} */
+
+/* .clr {
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+} */
+
+/* .main {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container > header {
+	margin: 10px;
+	padding: 20px 10px 10px 10px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.container > header h1 {
+	font-size: 32px;
+	line-height: 32px;
+	margin: 0;
+	position: relative;
+	font-weight: 300;
+	color: #777;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+}
+
+.container > header h2 {
+	font-size: 14px;
+	font-weight: 300;
+	font-style: italic;
+	margin: 0;
+	padding: 15px 0 5px 0;
+	color: #888;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
+}
+
+.support-note span {
+	color: #ac375d;
+	font-size: 16px;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+ */
+
+/*.ch-grid {*/
+/*	margin: 20px 0 0 0;*/
+/*	padding: 0;*/
+/*	list-style: none;*/
+/*	display: block;*/
+/*	text-align: center;*/
+/*	width: 100%;*/
+/*}*/
+
+/*.ch-grid:after,*/
+/*.ch-item:before {*/
+/*	content: '';*/
+/*	display: table;*/
+/*}*/
+
+/*.ch-grid:after { clear: both }*/
+
+/** {*/
+/*	-webkit-box-sizing: border-box;*/
+/*	   -moz-box-sizing: border-box;*/
+/*	        box-sizing: border-box;*/
+/*}*/
+
+/* .avatar-title {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    font-family: 'Microsoft JhengHei';
+} */
+
+
+/* 舒服的天氣就該待在家寫code阿~ */
+/* @date   2016/02/05 */
+/* @author w2sw2sw2s */
+/* @indo   動態篩選功能測試 */
+
+/*.lline {*/
+/*    display: inline-block;*/
+/*}*/
+
+#posts .mix {
+    display: none;
+}
+
+.controls {
+    /*background: #ffffff;*/
+    /*background: rgba(255,255,255,0.85);*/
+    /*background: #f7f7f7;*/
+    background: rgba(247,247,247,0.8);
+    /*background: silver url(lightpaperfibers.png) fixed;*/
+    /*background: rgba(255,255,255,0.8);*/
+    /*padding: 8px;*/
+    padding: 10px 11px;
+    border-radius: 4px;
+}
+
+.header-bg {
+    background: rgb(255, 255, 255);
+    /*background: silver url(lightpaperfibers.png) fixed;*/
+    margin-bottom: 16px;
+}
+
+/*.header-bg h1 {*/
+/*    color: black;*/
+/*}*/
+
+/* 讓瀏覽器的scroll bar變好看一點~ */
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10.5px rgba(0,0,0,0.2);
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background-color: #696969;
+    outline: 1px solid slategrey;
+    border-radius: 8px;
+}
+
+#ioh-logo {
+    margin: -30px;
+    position: relative;
+}
+
+/* 加上一點好玩，感覺有跟使用者互動的Gif圖~ */
+
+#funny-gif {
+    position: absolute;
+    top: 62px;
+    left: 290px;
+    width: 150px;
+    height: 110px;
+    /*background: silver url(lightpaperfibers.png) fixed;*/
+}
+
+/*#ioh-slogan {*/
+/*    display: inline-block;*/
+/*    margin: 0 auto;*/
+/*    margin-left: 220px;*/
+/*    font-family: 'Microsoft JhengHei';*/
+/*    font-size: 30px;*/
+/*}*/
+
+#ioh-slider-left, #ioh-slider-right {
+    border-radius: 4px;
+}
+
+#ncku-slider, #ntu-slider, #kmu-slider, #scu-slider {
+    border-radius: 4px;
+}
+
+#button-all {
+    font-family: Microsoft JhengHei;
+    /*background: #a94442;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-all:active {
+    transform: translateY(0px);
+}
+
+#button-ncku {
+    font-family: Microsoft JhengHei;
+    /*background: #0087cc;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-ncku:active {
+    transform: translateY(0px);
+}
+
+#button-scu {
+    font-family: Microsoft JhengHei;
+    /*background: #0087cc;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-scu:active {
+    transform: translateY(0px);
+}
+
+#button-kmu {
+    font-family: Microsoft JhengHei;
+    /*background: #0087cc;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-kmu:active {
+    transform: translateY(0px);
+}
+
+#button-cjcu {
+    font-family: Microsoft JhengHei;
+    /*background: #0087cc;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-cjcu:active {
+    transform: translateY(0px);
+}
+
+#button-nsysu {
+    font-family: Microsoft JhengHei;
+    /*background: #0087cc;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-nsysu:active {
+    transform: translateY(0px);
+}
+
+#button-ntu {
+    font-family: Microsoft JhengHei;
+    /*background: #0087cc;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-ntu:active {
+    transform: translateY(0px);
+}
+
+#button-ncnu {
+    font-family: Microsoft JhengHei;
+    /*background: #0087cc;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-ncnu:active {
+    transform: translateY(0px);
+}
+
+#button-ttu {
+    font-family: Microsoft JhengHei;
+    /*background: #0087cc;*/
+    font-size: 16px;
+    box-shadow: 0 2px 0 transparent;
+    padding: 13px;
+}
+
+#button-ttu:active {
+    transform: translateY(0px);
+}
+
+.button-style {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    /*height: 30px;*/
+    font-size: 1.6em;
+    padding: 13px;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    font-family: Microsoft JhengHei;
+}
+
+.button-style:hover {
+    background:#fff;
+    color:#1AAB8A;
+}
+
+.button-style:before, .button-style:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+}
+
+.button-style:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.button-style:hover:before, .button-style:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+
+
+
+#button-all {
+    background: #E65E50;
+    color: #fff;
+    border: none;
+    position: relative;
+    /*height: 30px;*/
+    font-size: 1.6em;
+    padding: 13px;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    font-family: Microsoft JhengHei;
+}
+
+#button-all:hover {
+    background:#fff;
+    color:#E65E50;
+}
+
+#button-all:before, #button-all:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #E65E50;
+    transition:400ms ease all;
+}
+
+#button-all:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+#button-all:hover:before, #button-all:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+
+

@@ -1,1 +1,668 @@
-Hello World!
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<title>Bootstrap X Salvattore X IOH</title>-->
+	<title>IOH X 大學工作坊概念頁</title>
+	<link rel="shortcut icon" href="http://ioh.tw/wp-content/themes/roots/assets/img/ioh-favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--<div class="container">-->
+		<!--<div class="splitter">-->
+		<!--	<ul class="nav nav-tabs">-->
+		<!--		<li role="presentation" class="segment-0"><a href="#" data-value="all">全部大學</a></li>-->
+		<!--		<li role="presentation" class="segment-1"><a href="#" data-value="ncku">成功大學</a></li>-->
+		<!--		<li role="presentation" class="segment-2"><a href="#" data-value="ntu">台灣大學</a></li>-->
+		<!--	</ul>-->
+		<!--</div>-->
+
+		<!--<div id="posts" data-columns>-->
+		<!--	<div id="list">-->
+		<!--		<li data-id="id-1" class="ncku">-->
+		<!--			<div class="post">-->
+		<!--				<div class="ch-item">-->
+		<!--					<img class="avatar-img test-img" src="http://ioh.tw/assets/03-成大醫學系-林協霆-Hsieh-Ting-Lin-大頭照.jpg"/>-->
+		<!--					<div class="test-info">-->
+		<!--					    <h3>林協霆</h3>-->
+		<!--					    <p class="avatar-school">成功大學<br>醫學系</p>-->
+		<!--					    <button>-->
+		<!--							<p class="button-title">觀看講座</p>-->
+		<!--						</button>-->
+		<!--					</div>-->
+		<!--					<p class="avatar-title">Hsieh-Ting Lin 林協霆</p>-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--		</li>-->
+		<!--		<li data-id="id-2" class="ntu">-->
+		<!--			<div class="post">-->
+		<!--				<div class="ch-item">-->
+		<!--					<img class="avatar-img" src="http://ioh.tw/assets/D1lR2EM.jpg"/>-->
+		<!--					<div class="test-info">-->
+		<!--					    <h3>高幼昕</h3>-->
+		<!--					    <p class="avatar-school">臺灣大學<br>農業化學系</p>-->
+		<!--					    <button>-->
+		<!--							<p class="button-title">觀看講座</p>-->
+		<!--						</button>-->
+		<!--					</div>-->
+		<!--					<p class="avatar-title">Abigail Kao 高幼昕</p>-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--		</li>-->
+		<!--	</div>-->
+		<!--</div>-->
+	<!--</div>-->
+	
+	<!--<div class="container">-->
+		<!--<ul class="nav nav-tabs">-->
+		<!--  <li role="presentation" class="active"><a href="#">Home</a></li>-->
+		<!--  <li role="presentation"><a href="#">Profile</a></li>-->
+		<!--  <li role="presentation"><a href="#">Messages</a></li>-->
+		<!--</ul>-->
+
+		<!--<div class="splitter">-->
+		<!--	<ul class="nav nav-tabs">-->
+		<!--		<li role="presentation" class="segment-0 selected-0"><a href="#" data-value="all">全部大學</a></li>-->
+		<!--		<li role="presentation" class="segment-1"><a href="#" data-value="ncku">成功大學</a></li>-->
+		<!--		<li role="presentation" class="segment-2"><a href="#" data-value="ntu">臺灣大學</a></li>-->
+		<!--		<li role="presentation" class="segment-3"><a href="#" data-value="tku">淡江大學</a></li>-->
+		<!--		<li role="presentation" class="segment-4"><a href="#" data-value="ttu">大同大學</li>-->
+		<!--	</ul>-->
+		<!--</div>-->
+		
+		<!--<div id="posts" data-columns>-->
+		<!--	<div class="list">-->
+		<!--		<div data-id="id-1" class="ncku lline">-->
+		<!--			<div class="post">-->
+		<!--				<div class="ch-item">-->
+		<!--					<img class="avatar-img test-img" src="http://ioh.tw/assets/03-成大醫學系-林協霆-Hsieh-Ting-Lin-大頭照.jpg">-->
+							<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=應用程式&w=128&h=128"/>-->
+		<!--					<div class="test-info">-->
+		<!--						<h3>林協霆</h3>-->
+		<!--						<p class="avatar-school">成功大學<br>醫學系</p>-->
+		<!--						<button>-->
+		<!--							<p class="button-title">觀看講座</p>-->
+		<!--						</button>-->
+		<!--					</div>-->
+		<!--					<p class="avatar-title">Hsieh-Ting Lin 林協霆</p>-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--		</div>-->
+		<!--		<div data-id="id-2" class="ncku lline">-->
+		<!--			<div class="post">-->
+		<!--				<div class="ch-item">-->
+		<!--					<img class="avatar-img test-img" src="http://ioh.tw/assets/03-成大工設系-謝亞耘-Ya-Yun-Hsieh-大頭照.png">-->
+							<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=應用程式&w=128&h=128"/>-->
+		<!--					<div class="test-info">-->
+		<!--						<h3>謝亞耘</h3>-->
+		<!--						<p class="avatar-school">成功大學<br>工業設計學系</p>-->
+		<!--						<button>-->
+		<!--							<p class="button-title">觀看講座</p>-->
+		<!--						</button>-->
+		<!--					</div>-->
+		<!--					<p class="avatar-title">Ya-Yun Hsieh 謝亞耘</p>-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--		</div>-->
+		<!--		<div data-id="id-3" class="ntu lline">-->
+		<!--			<div class="post">-->
+		<!--				<div class="ch-item">-->
+		<!--					<img class="avatar-img test-img" src="http://ioh.tw/assets/D1lR2EM.jpg">-->
+							<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=應用程式&w=128&h=128"/>-->
+		<!--					<div class="test-info">-->
+		<!--						<h3>高幼昕</h3>-->
+		<!--						<p class="avatar-school">臺灣大學<br>農業化學系</p>-->
+		<!--						<button>-->
+		<!--							<p class="button-title">觀看講座</p>-->
+		<!--						</button>-->
+		<!--					</div>-->
+		<!--					<p class="avatar-title">Abigail Kao 高幼昕</p>-->
+		<!--				</div>-->
+		<!--			</div>-->
+					<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=MAC&w=128&h=128"/>-->
+		<!--		</div>-->
+		<!--		<div data-id="id-4" class="tku lline">-->
+		<!--			<div class="post">-->
+		<!--				<div class="ch-item">-->
+		<!--					<img class="avatar-img test-img" src="http://ioh.tw/assets/02-周昕盈-Icon.jpg">-->
+							<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=應用程式&w=128&h=128"/>-->
+		<!--					<div class="test-info">-->
+		<!--						<h3>周昕盈</h3>-->
+		<!--						<p class="avatar-school">淡江大學<br>企業管理學系</p>-->
+		<!--						<button>-->
+		<!--							<p class="button-title">觀看講座</p>-->
+		<!--						</button>-->
+		<!--					</div>-->
+		<!--					<p class="avatar-title">Cindy Chou 周昕盈</p>-->
+		<!--				</div>-->
+		<!--			</div>-->
+					<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=WIN&w=128&h=128"/>-->
+		<!--		</div>-->
+		<!--		<div data-id="id-5" class="ntu lline">-->
+		<!--			<div class="post">-->
+		<!--				<div class="ch-item">-->
+		<!--					<img class="avatar-img test-img" src="http://ioh.tw/assets/03張培閎大頭照.png">-->
+							<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=應用程式&w=128&h=128"/>-->
+		<!--					<div class="test-info">-->
+		<!--						<h3>張培閎</h3>-->
+		<!--						<p class="avatar-school">臺灣大學<br>機械工程學系</p>-->
+		<!--						<button>-->
+		<!--							<p class="button-title">觀看講座</p>-->
+		<!--						</button>-->
+		<!--					</div>-->
+		<!--					<p class="avatar-title">Pei Hung Chang 張培閎</p>-->
+		<!--				</div>-->
+		<!--			</div>-->
+					<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=MAC&w=128&h=128"/>-->
+		<!--		</div>-->
+		<!--		<div data-id="id-6" class="ttu lline">-->
+		<!--			<div class="post">-->
+		<!--				<div class="ch-item">-->
+		<!--					<img class="avatar-img test-img" src="http://ioh.tw/assets/03-大同大學資訊經營學系黃筠Yun-HuangProfile.jpg">-->
+							<!--<img width="128" height="128" src="https://placeholdit.imgix.net/~text?txtsize=21&txt=應用程式&w=128&h=128"/>-->
+		<!--					<div class="test-info">-->
+		<!--						<h3>黃筠</h3>-->
+		<!--						<p class="avatar-school">大同大學<br>資訊經營學系</p>-->
+		<!--						<button>-->
+		<!--							<p class="button-title">觀看講座</p>-->
+		<!--						</button>-->
+		<!--					</div>-->
+		<!--					<p class="avatar-title">Yun Huang 黃筠</p>-->
+		<!--				</div>-->
+		<!--			</div>-->
+					<!--<img width="128" height="128" src="http://placehold.it/128x128">-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--</div>-->
+	<!--</div>-->
+
+	<!-- Header -->
+	<!--<header class="container">-->
+		<!--<div class="lead">-->
+		<!--<h1>Bootstrap3 & Salvattore X IOH</h1>-->
+		<!--</div>-->
+		<!--<div class="malaysia">-->
+		<!--	<p>Salvattore is an alternative to 'jquery Masonry' and it's based on CSS-driven configuration. Pay attention to the <code> data-columns</code> next to posts id in the html file, and after <code>/* Salvattore Base Styles */</code> in css file</p>-->
+		<!--</div>-->
+	<!--</header>-->
+	
+	<br>
+	
+	<div class="container">
+		
+		<div class="jumbotron header-bg">
+			<img id="ioh-logo" src="http://ioh.tw/assets/ioh_logo.png" alt="IOH 開放個人經驗平台" width="160" height="120">
+	    	<!--<img id="funny-gif" src="http://data.whicdn.com/images/126738177/large.gif" alt="">-->
+	    	<!--<img id="funny-gif" src="http://media.giphy.com/media/111HqOLKPIQ3WE/giphy.gif" alt="funny">-->
+	    	<img id="funny-gif" src="https://s-media-cache-ak0.pinimg.com/originals/3c/14/64/3c146495529011f9bf2721c7802dc778.gif" alt="">
+	    	<!--<p id="ioh-slogan">"當我們說起故事，我們就可以改變世界！"</p>-->
+	    	<!--<h1>Navbar example</h1>-->
+	        <!--<p lingdex="0">This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>-->
+	        <!--<p lingdex="1">To see the difference between static and fixed top navbars, just scroll.</p>-->
+	        <!--<p lingdex="2">-->
+	        <!--	<a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs »</a>-->
+	        <!--</p>-->
+	    </div>
+		
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img id="kmu-slider" src="http://ioh.tw/assets/IOH-高醫.jpg" alt="高雄醫學大學">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+            <div class="item">
+              <img id="ntu-slider" src="http://ioh.tw/assets/160123台大-Slideshow.jpg" alt="臺灣大學">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+            <div class="item">
+              <img id="scu-slider" src="http://ioh.tw/assets/ioh-東吳.jpg" alt="東吳大學">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+            <div class="item">
+              <img id="ncku-slider" src="http://ioh.tw/assets/160123成大-Slideshow1.jpg" alt="成功大學">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a id="ioh-slider-left" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a id="ioh-slider-right" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    	</div>
+
+	<!-- Content -->
+	<!--<div class="container">-->
+		
+		<!-- 用nav的排版呈現按鈕，User點選後會動態篩選各大學工作坊講座~ -->
+		<!--<ul class="nav nav-tabs">-->
+		<!--  <li role="presentation"><a href="#">全部大學</a></li>-->
+		<!--  <li role="presentation"><a href="#">成功大學</a></li>-->
+		<!--  <li role="presentation"><a href="#">台灣大學</a></li>-->
+		<!--  <li role="presentation"><a href="#">東吳大學</a></li>-->
+		<!--  <li role="presentation"><a href="#">長榮大學</a></li>-->
+		<!--</ul>-->
+		
+		<br>
+		
+		<div class="controls">
+		  <!--<label>聰明篩選器:</label>-->
+		  
+		  <button id="button-all" class="filter button-style" data-filter="all">所有大學工作坊</button>
+		  <button id="button-ncku" class="filter button-style" data-filter=".ncku">成功大學</button>
+		  <button id="button-scu" class="filter button-style" data-filter=".scu">東吳大學</button>
+		  <button id="button-kmu" class="filter button-style" data-filter=".kmu">高雄醫學大學</button>
+		  <button id="button-cjcu" class="filter button-style" data-filter=".cjcu">長榮大學</button>
+		  <button id="button-nsysu" class="filter button-style" data-filter=".nsysu">中山大學</button>
+		  <button id="button-ntu" class="filter button-style" data-filter=".ntu">臺灣大學</button>
+		  <button id="button-ncnu" class="filter button-style" data-filter=".ncnu">暨南國際大學</button>
+		  <button id="button-ttu" class="filter button-style" data-filter=".ttu">大同大學</button>
+		  
+		  
+		<!--   <label>Sort:</label>
+		  
+		  <button class="sort" data-sort="myorder:asc">Asc</button>
+		  <button class="sort" data-sort="myorder:desc">Desc</button> -->
+		</div>
+
+<br>
+	<!--<div class="jumbotron container-fluid">-->
+		<div id="posts" data-columns >
+				
+			<!-- avatar測試中，暫用林協霆做為測試~ -->
+			<!-- @date 2016/02/05-->
+			<!-- @author w2sw2sw2s -->
+			<!-- @info avatar特效測試成功~ -->
+			
+			<!--成功大學-->
+			<div class="post mix ncku">
+				<div class="ch-item">
+			  		<img class="avatar-img test-img" src="http://ioh.tw/assets/03-成大醫學系-林協霆-Hsieh-Ting-Lin-大頭照.jpg">
+			    	<div class="test-info">
+				    	<h3>林協霆</h3>
+			      		<p class="avatar-school">成功大學<br>醫學系</p>
+			      		<button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    	</div>
+			    	<p class="avatar-title">Hsieh-Ting Lin 林協霆</p>
+			  	</div>
+			</div>
+			
+			<div class="post mix ncku">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-成大工設系-謝亞耘-Ya-Yun-Hsieh-大頭照.png">
+					<div class="test-info">
+			    	<h3>謝亞耘</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">成功大學<br>工業設計學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Ya-Yun Hsieh 謝亞耘</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="post mix ncku">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-成大化工系-侯智薰-Raymond-Hou-大頭照.png">
+					<div class="test-info">
+			    	<h3>侯智薰</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">成功大學<br>化學工程學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Raymond Hou 侯智薰</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="post mix ncku">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-成大電機系-林聖祐-Andy-Lin-大頭貼.jpg">
+					<div class="test-info">
+			    	<h3>林聖祐</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">成功大學<br>電機工程學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Andy Lin 林聖祐</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="post mix ncku">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-成大電機系-方沛涵-Bobo-Fang-大頭照.png">
+					<div class="test-info">
+			    	<h3>方沛涵</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">成功大學<br>電機工程學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Bobo Fang 方沛涵</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="post mix ncku">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-成大機械系-楊聰偉-Robert-Yang-大頭照.jpg">
+					<div class="test-info">
+			    	<h3>楊聰偉</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">成功大學<br>機械工程學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Robert Yang 楊聰偉</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="post mix ncku">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-成大工設系-吳承翰-Cheng-Hann-Wu-大頭照.png">
+					<div class="test-info">
+			    	<h3>吳承翰</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">成功大學<br>工業設計學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Cheng-Hann Wu 吳承翰</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="post mix ncku">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-成功大學工業與資訊管理學系-許欣穎-Hsin-Ying-Hsu-大頭照.png">
+					<div class="test-info">
+			    	<h3>許欣穎</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">成功大學<br>工業與資訊管理學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Hsin-Ying Hsu 許欣穎</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			
+			<!--東吳大學-->
+			<div class="post mix scu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-東吳大學經濟系-郭旻璇-Min-Hsuan-Kuo-大頭照.png">
+					<div class="test-info">
+			    	<h3>郭旻璇</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">東吳大學<br>經濟學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Min-Hsuan Kuo 郭旻璇</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="post mix scu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-東吳法律系-彭冠錚-Leon-Peng-大頭照.png">
+					<div class="test-info">
+			    	<h3>彭冠錚</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">東吳大學<br>法律學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Leon Peng 彭冠錚</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			
+			<!--高雄醫學大學-->
+			<div class="post mix kmu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-高醫香粧品系-王薰儀-Shiun-Yi-Wang-大頭照.jpg">
+					<div class="test-info">
+			    	<h3>王薰儀</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">高雄醫學大學<br>香粧品學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Shiun-Yi Wang 王薰儀</p>
+				<!--</a>-->
+				</div>
+				
+			</div>
+			
+			
+			<!--長榮大學-->
+			<div class="post mix cjcu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-長榮大學科技工程與管理學系-余其蓉-Fion-Yu-大頭照.png">
+					<div class="test-info">
+			    	<h3>余其蓉</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">長榮大學<br>科技管理與工程學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Fion Yu 余其蓉</p>
+				<!--</a>-->
+				</div>
+		
+			</div>
+			
+			
+			<!--中山大學-->
+			<div class="post mix nsysu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03詹詠翔大頭照1.jpg">
+					<div class="test-info">
+			    	<h3>詹詠翔</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">中山大學<br>物理學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Yung Hsiang Chan 詹詠翔</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<!--臺灣大學-->
+			<div class="post mix ntu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/D1lR2EM.jpg">
+					<div class="test-info">
+			    	<h3>高幼昕</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">臺灣大學<br>農業化學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Abigail Kao 高幼昕</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="post mix ntu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/大頭貼.png">
+					<div class="test-info">
+			    	<h3>黃昭綺</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">臺灣大學<br>會計學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Chaoss Huang 黃昭綺</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<!--暨南國際大學-->
+			<div class="post mix ncnu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/柯育鎮大頭貼.jpg">
+					<div class="test-info">
+			    	<h3>柯育鎮</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">暨南國際大學<br>中國語文學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Yu-Chen Ko 柯育鎮</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<!--大同大學-->
+			<div class="post mix ttu">
+				<div class="ch-item">
+				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
+					<img class="avatar-img" src="http://ioh.tw/assets/03-大同大學資訊經營學系黃筠Yun-HuangProfile.jpg">
+					<div class="test-info">
+			    	<h3>黃筠</h3>
+			    	<!--<h3>Hsieh-Ting Lin</h3>-->
+			      <p class="avatar-school">大同大學<br>資訊經營學系</p>
+			      <button>
+							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+						</button>
+			    </div>
+					<p class="avatar-title">Yun Huang 黃筠</p>
+				<!--</a>-->
+				</div>
+			</div>
+			
+			<!--<div class="post">-->
+			<!--	<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/barcelonatech-iaac-%E8%A5%BF%E7%8F%AD%E7%89%99%E5%8A%A0%E6%B3%B0%E9%9A%86%E5%B0%BC%E4%BA%9E%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%B8%E5%BB%BA%E7%AF%89%E7%A0%94%E7%A9%B6%E6%89%80-%E6%9E%97%E4%BF%8A%E4%BD%91/">-->
+			<!--		<img class="avatar-img" src="http://ioh.tw/assets/03-UPC-BarcelonaTech-IaaC-林俊佑Chun-Yu-Lin-大頭照.png">-->
+			<!--		<p class="avatar-title">Chun-Yu Lin 林俊佑</p>-->
+			<!--	</a>-->
+			<!--</div>-->
+			<!--<div class="post">-->
+			<!--	<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/ju-chun-ko-%E8%91%9B%E5%A6%82%E9%88%9E/">-->
+			<!--		<img class="avatar-img" src="http://ioh.tw/assets/cache//03-葛如鈞-Ju-Chun-Ko-大頭照/623732200.jpg">-->
+			<!--		<p class="avatar-title">Ju-Chun Ko 葛如鈞</p>-->
+			<!--	</a>-->
+			<!--</div>-->
+		<!--	<div class="post">-->
+		<!--		<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%B7%A1%E6%B1%9F%E4%BC%81%E7%AE%A1%E7%B3%BB-%E5%91%A8%E6%98%95%E7%9B%88-cindy-chou-twtalks/">-->
+		<!--			<img class="avatar-img" src="http://ioh.tw/assets/02-周昕盈-Icon.jpg">-->
+		<!--			<p class="avatar-title">Cindy Chou 周昕盈</p>-->
+		<!--		</a>-->
+		<!--	</div>-->
+		<!--	<div class="post">-->
+		<!--		<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E5%A4%A7%E5%90%8C%E5%A4%A7%E5%AD%B8%E8%B3%87%E8%A8%8A%E7%B6%93%E7%87%9F%E5%AD%B8%E7%B3%BB-%E9%BB%83%E7%AD%A0-yun-huang-twtalks/">-->
+		<!--			<img class="avatar-img" src="http://ioh.tw/assets/03-大同大學資訊經營學系黃筠Yun-HuangProfile.jpg">-->
+		<!--			<p class="avatar-title">Yun Huang 黃筠</p>-->
+		<!--		</a>-->
+				<!--<img class="avatar-img" src="http://ioh.tw/assets/03-大同大學資訊經營學系黃筠Yun-HuangProfile.jpg"></img>-->
+		<!--	</div>-->
+		<!--	<div class="post">-->
+		<!--		<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E9%BA%A5%E8%82%AF%E9%8C%AB-mckinsey-company-%E9%99%B3%E5%BD%A5%E5%BB%B7-bradley-chen/">-->
+		<!--			<img class="avatar-img" src="http://ioh.tw/assets/03-麥肯錫-McKinsey-陳彥廷-Bradley-Chen-大頭照2.png">-->
+		<!--			<p class="avatar-title">Bradley Chen 陳彥廷</p>-->
+		<!--		</a>-->
+				<!--<img class="avatar-img" src="http://ioh.tw/assets/03-麥肯錫-McKinsey-陳彥廷-Bradley-Chen-大頭照2.png"></img>-->
+		<!--	</div>-->
+		<!--	<div class="post">-->
+		<!--		<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E5%8F%B0%E5%A4%A7%E8%BE%B2%E5%8C%96%E7%B3%BB-%E9%AB%98%E5%B9%BC%E6%98%95-abigail-kao/">-->
+		<!--			<img class="avatar-img" src="http://ioh.tw/assets/D1lR2EM.jpg">-->
+		<!--			<p class="avatar-title">Abigail Kao 高幼昕</p>-->
+		<!--		</a>-->
+				<!--<img class="avatar-img" src="http://ioh.tw/assets/D1lR2EM.jpg"></img>-->
+		<!--	</div>-->
+		<!--</div>-->
+	<!--</div>-->
+	</div>
+
+	<!-- Footer -->
+
+	<!--<footer class="container">-->
+		<!--<p >@author w2sw2sw2s</p>-->
+	<!--</footer>-->
+
+
+	<!-- The script must be included at the bottom of the body to work -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js"></script>
+	
+	<!-- 以下四個js檔都是為測試動態篩選而使用的~ -->
+	<!--<script src="js/jquery.quicksand.js"></script>-->
+	<!--<script src="js/jquery.easing.1.3.js"></script>-->
+	<!--<script src="js/jquery-animate-css-rotate-scale.js"></script>-->
+	<!--<script src="js/qstand.js"></script>-->
+	
+	<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+	<script src="main.js"></script>
+	
+	</body>
+</html>

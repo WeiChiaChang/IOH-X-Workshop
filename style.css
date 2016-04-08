@@ -207,7 +207,7 @@ button {
     margin: 0;
     outline: 0;
     padding: 4px 18px;
-    transition: all .13s linear;
+    transition: all .15s linear;
 }
 
 button:active {

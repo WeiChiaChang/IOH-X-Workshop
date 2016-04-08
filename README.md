@@ -1,6 +1,6 @@
 # IOH X Workshop 概念頁
 
-[直接看DEMO](https://ioh-workshop-weichiachang.c9users.io/test.html)
+[直接看DEMO](http://weichiachang.github.io/IOH-X-Workshop/)
 <br>
 
 寒假無聊時做好玩的，所用到的設計參考和技術，以下：

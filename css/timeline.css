@@ -53,7 +53,7 @@ h1,h2,h4,h5,h6 {
 	}
 		#dates {
 			width: 800px;
-			height: 70px;
+			height: 85px;
 			overflow: hidden;
 			margin-top: 18px;
 		}
@@ -70,10 +70,17 @@ h1,h2,h4,h5,h6 {
 					line-height: 38px;
 					padding-bottom: 10px;
 					text-decoration: none;
+					/*font-size: 32px;*/
+					/*transition: all 0.8s linear;*/
 				}
-				#dates .selected {
-			        font-size: 38px;
-				}
+				/*#dates .selected {*/
+			 /*       font-size: 38px;*/
+				/*}*/
+				
+				#dates .selected div .day {
+          font-size: 42px;
+          transition: all 0.8s linear;
+        }
 		
 		#issues {
 			width: 804px;
@@ -210,11 +217,11 @@ h1,h2,h4,h5,h6 {
 }
  
 .year { 
-  top: -24px;
-  right: -13px;
+  top: -22px;
+  right: -1px;
   font-size: 20px;
   /*rotation: -90deg;*/
-  /*transform: rotate(-90deg);*/
+  transform: rotate(-90deg);
   /* ** Hacks ** */
   /*-webkit-transform: rotate(-90deg);*/
   /*-moz-transform: rotate(-90deg);  */

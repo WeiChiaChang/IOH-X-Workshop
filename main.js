@@ -41,3 +41,11 @@ $(function(){
 	// });
 	
 });
+
+$(function(){
+    $().timelinr({
+    	arrowKeys: 'true',
+    	// issuesTransparency：0
+    	issuesTransparency: 0,
+    })
+});

@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="http://ioh.tw/wp-content/themes/roots/assets/img/ioh-favicon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/timeline.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
@@ -211,7 +212,7 @@
 	    </div>
 		
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
+           <!--Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -219,7 +220,7 @@
             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
           </ol>
 
-          <!-- Wrapper for slides -->
+           <!--Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
               <img id="kmu-slider" src="http://i.imgur.com/0W3T33V.jpg" alt="高雄醫學大學">
@@ -247,7 +248,7 @@
             </div>
           </div>
 
-          <!-- Controls -->
+           <!--Controls -->
           <a id="ioh-slider-left" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -257,6 +258,148 @@
             <span class="sr-only">Next</span>
           </a>
     	</div>
+    	
+  <!--
+    @info   Add jQuery timeline scorllbar
+    @author w2sw2sw2s
+    @date   2016 / 04 / 30 (Sat)
+  -->
+
+	<div id="timeline">
+		<ul id="dates">
+			<li><a href="#1900">
+				<div class="date">
+				  <span class="day">30</span>
+				  <span class="month">Jul</span>
+				  <span class="year">2015</span>
+				</div>
+			</a></li>
+			<li><a href="#1930">
+				<div class="date">
+				  <span class="day">15</span>
+				  <span class="month">Oct</span>
+				  <span class="year">2015</span>
+				</div>
+			</a></li>
+			<li><a href="#1944">
+				<div class="date">
+				  <span class="day">25</span>
+				  <span class="month">Nov</span>
+				  <span class="year">2015</span>
+				</div>
+			</a></li>
+			<!--<li><a href="#1950">1950</a></li>-->
+			<!--<li><a href="#1971">1971</a></li>-->
+			<!--<li><a href="#1977">1977</a></li>-->
+			<!--<li><a href="#1989">1989</a></li>-->
+			<!--<li><a href="#1999">1999</a></li>-->
+			<li><a href="#2001">
+				<div class="date">
+				  <span class="day">27</span>
+				  <span class="month">Mar</span>
+				  <span class="year">2016</span>
+				</div>
+			</a></li>
+			<li><a href="#2011">
+				<div class="date">
+				  <span class="day">25</span>
+				  <span class="month">Apr</span>
+				  <span class="year">2016</span>
+				</div>
+			</a></li>
+		</ul>
+		<ul id="issues">
+			<li id="1900">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/NTUST-Emblem.png" width="225" height="225" />
+				<h1>台科大工作坊</h1>
+				<p>
+					我們在建置網站之前通常都會進行仔細的網站企畫並利用一些企畫工具進行雛形設計(Prototyping)，
+					在設計雛形的時候通常會放一些假字在版面上，
+					多數情況都是隨便到新聞網站複製一段文字上去塞到企畫的版面裡，
+					雖然已經跟客戶溝通過文字是隨便複製來的並無特殊意義，
+					但客戶端通常不只一人，總是會有人認真看待雛形網頁上的文字而被要求修正，
+					但這對我們來說就是做額外的虛工，所以我們需要更好的解決方案。
+				</p>
+			</li>
+			<li id="1930">
+				<img src="https://upload.wikimedia.org/wikipedia/zh/2/2b/Soochow_University_Logo.png" width="225" height="225" />
+				<h1>東吳工作坊</h1>
+				<p>
+					我們在建置網站之前通常都會進行仔細的網站企畫並利用一些企畫工具進行雛形設計(Prototyping)，
+					在設計雛形的時候通常會放一些假字在版面上，
+					多數情況都是隨便到新聞網站複製一段文字上去塞到企畫的版面裡，
+					雖然已經跟客戶溝通過文字是隨便複製來的並無特殊意義，
+					但客戶端通常不只一人，總是會有人認真看待雛形網頁上的文字而被要求修正，
+					但這對我們來說就是做額外的虛工，所以我們需要更好的解決方案。
+				</p>
+			</li>
+			<li id="1944">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Beats_Electronics_logo.svg/2000px-Beats_Electronics_logo.svg.png" width="225" height="225" />
+				<h1>Beats Audio工作坊</h1>
+				<p>
+					我們在建置網站之前通常都會進行仔細的網站企畫並利用一些企畫工具進行雛形設計(Prototyping)，
+					在設計雛形的時候通常會放一些假字在版面上，
+					多數情況都是隨便到新聞網站複製一段文字上去塞到企畫的版面裡，
+					雖然已經跟客戶溝通過文字是隨便複製來的並無特殊意義，
+					但客戶端通常不只一人，總是會有人認真看待雛形網頁上的文字而被要求修正，
+					但這對我們來說就是做額外的虛工，所以我們需要更好的解決方案。
+				</p>
+				</li>
+			<!--<li id="1950">-->
+			<!--	<img src="images/4.png" width="256" height="256" />-->
+			<!--	<h1>1950</h1>-->
+			<!--	<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>-->
+			<!--</li>-->
+			<!--<li id="1971">-->
+			<!--	<img src="images/5.png" width="256" height="256" />-->
+			<!--	<h1>1971</h1>-->
+			<!--	<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>-->
+			<!--</li>-->
+			<!--<li id="1977">-->
+			<!--	<img src="images/6.png" width="256" height="256" />-->
+			<!--	<h1>1977</h1>-->
+			<!--	<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>-->
+			<!--</li>-->
+			<!--<li id="1989">-->
+			<!--	<img src="images/7.png" width="256" height="256" />-->
+			<!--	<h1>1989</h1>-->
+			<!--	<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>-->
+			<!--</li>-->
+			<!--<li id="1999">-->
+			<!--	<img src="images/8.png" width="256" height="256" />-->
+			<!--	<h1>1999</h1>-->
+			<!--	<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>-->
+			<!--</li>-->
+			<li id="2001">
+				<img src="http://assets.codecloudapp.com/sites/562956d86e6f640de4000000/image/png/1443470789000/github-512.png" width="225" height="225" />
+				<h1>Github工作坊</h1>
+				<p>
+					我們在建置網站之前通常都會進行仔細的網站企畫並利用一些企畫工具進行雛形設計(Prototyping)，
+					在設計雛形的時候通常會放一些假字在版面上，
+					多數情況都是隨便到新聞網站複製一段文字上去塞到企畫的版面裡，
+					雖然已經跟客戶溝通過文字是隨便複製來的並無特殊意義，
+					但客戶端通常不只一人，總是會有人認真看待雛形網頁上的文字而被要求修正，
+					但這對我們來說就是做額外的虛工，所以我們需要更好的解決方案。
+				</p>
+				</li>
+			<li id="2011">
+				<img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" width="225" height="225" />
+				<h1>Ubuntu工作坊</h1>
+				<p>
+					我們在建置網站之前通常都會進行仔細的網站企畫並利用一些企畫工具進行雛形設計(Prototyping)，
+					在設計雛形的時候通常會放一些假字在版面上，
+					多數情況都是隨便到新聞網站複製一段文字上去塞到企畫的版面裡，
+					雖然已經跟客戶溝通過文字是隨便複製來的並無特殊意義，
+					但客戶端通常不只一人，總是會有人認真看待雛形網頁上的文字而被要求修正，
+					但這對我們來說就是做額外的虛工，所以我們需要更好的解決方案。
+				</p>
+			</li>
+		</ul>
+		<!--<div id="grad_left"></div>-->
+		<!--<div id="grad_right"></div>-->
+		<a href="#" id="next">+</a>
+		<a href="#" id="prev">-</a>
+	</div>
 
 	<!-- Content -->
 	<!--<div class="container">-->
@@ -663,6 +806,7 @@
 	<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
 	<script src="main.js"></script>
+	<script src="jquery.timelinr-0.9.6.js"></script>
 	
 	</body>
 </html>

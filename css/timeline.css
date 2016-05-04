@@ -10,19 +10,19 @@
 /*	font-size: 14px;*/
 /*}*/
 
-a {
-	color: #ffffcc;
-	text-decoration: none;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	transition: 0.5s;
-}
-	a:hover,
-	a.selected {
-		color: #ffcc00;
-	}
+/*a {*/
+/*	color: #ffffcc;*/
+/*	text-decoration: none;*/
+/*	-webkit-transition: 0.5s;*/
+/*	-moz-transition: 0.5s;*/
+/*	-o-transition: 0.5s;*/
+/*	-ms-transition: 0.5s;*/
+/*	transition: 0.5s;*/
+/*}*/
+/*	a:hover,*/
+/*	a.selected {*/
+/*		color: #ffcc00;*/
+/*	}*/
 
 /*h1,h2,h4,h5,h6 {*/
 /*	text-align: center;*/

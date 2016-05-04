@@ -23,20 +23,21 @@
     background-color: #66D999;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
+    /*border: 1px solid #888;*/
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     /*-webkit-animation-name: animatetop;*/
     /*-webkit-animation-duration: 0.8s;*/
     /*animation-name: animatetop;*/
     /*animation-duration: 0.8s*/
-    animation: fadein 3.5s;
+    animation: fadein 3.2s;
     /*transition: opacity s linear; */
     font-family: "Microsoft JhengHei";
 }
 
-.modal-content p {
+.p-in-modal {
     text-align: justify;
+    padding-top: 40px;
 }
 
 /* Add Animation */
@@ -93,25 +94,26 @@
     float: right;
     /*font-size: 28px;*/
     /*font-weight: bold;*/
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 900;
     line-height: 0;
     color: #000;
     position: relative;
-    right: -12px;
-    top: 3px;
+    right: -8px;
+    top: 2px;
 }
 
-/*.close:hover,*/
-/*.close:focus {*/
-/*    color: #000;*/
-/*    text-decoration: none;*/
-/*    cursor: pointer;*/
-/*}*/
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .modal-header {
+    border-radius: 4px 4px 0px 0px;
     padding: 2px 16px;
-    background-color: #66D999;
+    background-color: #a94442;
     color: white;
     border: none;
 }
@@ -121,20 +123,21 @@
 }
 
 .modal-body {
-    padding: 0px 16px;
+    padding: 30px 16px;
 }
 
-.modal-body p {
-    font-family: "Microsoft JhengHei";
-    text-align: center;
-    font-size: 24px;
-}
+/*.modal-body p {*/
+/*    font-family: "Microsoft JhengHei";*/
+/*    text-align: center;*/
+/*    font-size: 24px;*/
+/*}*/
 
 .modal-footer {
     padding: 2px 16px;
     background-color: #66D999;
     color: white;
     border: none;
+    border-radius: 4px;
 }
 
 .modal-avatar-img {
@@ -142,4 +145,12 @@
     width: 100%;
     margin: 0;
     border-radius: 10px;
+}
+
+#modal-button {
+    width: 100%;
+}
+
+#modal-button p {
+    text-align: center;
 }

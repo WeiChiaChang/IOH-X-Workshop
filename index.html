@@ -505,6 +505,36 @@
 	
 	</div>
 	
+	<div id="myModal-3" class="modal">
+	
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+	      <!--<h2>Modal Header</h2>-->
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-4 intro">
+		    <div class="modal-body">
+		    	<img class="modal-avatar-img avatar-img test-img" src="http://i.imgur.com/ltCxQol.png">
+		    </div>
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-7 intro p-in-modal">
+	    	<p>Min-Hsuan Kuo 郭旻璇，來自屏東縣枋寮鄉，就讀於東吳大學經濟系，預計於 2016 年畢業。
+
+2012 年畢業於市立高雄女子高級中學，由指定科目考試進入東吳大學，在升上大二那年，獲得輔修會計系資格。在求學階段中，長達七年參與舞蹈社團，期間也夾雜了熱音以及籃球社，而在七年的社團經驗當中，學習到許多課堂上無法獲得的知識，也利用經驗擔任系上表演舞碼負責人及表演者。</p>
+				<!--<br>-->
+				<!--<br>-->
+				<button id="modal-button">
+					<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
+				</button>
+	    </div>
+	    <div class="modal-footer">
+	      <!--<h3>Modal Footer</h3>-->
+	    </div>
+	  </div>
+	
+	</div>
+	
 		<div id="posts" data-columns >
 				
 			<!-- avatar測試中，暫用林協霆做為測試~ -->
@@ -652,12 +682,12 @@
 			<div class="post mix scu">
 				<div class="ch-item">
 				<!--<a class="avatar-link" target="_blank" href="http://ioh.tw/talks/%E6%88%90%E5%A4%A7%E5%B7%A5%E8%A8%AD%E7%B3%BB-%E8%AC%9D%E4%BA%9E%E8%80%98-ya-yun-hsieh-twtalks/">-->
-					<img class="avatar-img" src="http://placehold.it/400x400">
+					<img class="avatar-img" src="http://i.imgur.com/ltCxQol.png">
 					<div class="test-info">
 			    	<h3>郭旻璇</h3>
 			    	<!--<h3>Hsieh-Ting Lin</h3>-->
 			      <p class="avatar-school">東吳大學<br>經濟學系</p>
-			      <button>
+			      <button id="myBtn-3">
 							<p class="button-title"><i class="fa fa-youtube-play"></i> 觀看講座</p>
 						</button>
 			    </div>
@@ -883,15 +913,21 @@
 		
 		var modal_2 = document.getElementById('myModal-2');
 		
+		var modal_3 = document.getElementById('myModal-3');
+		
 		// Get the button that opens the modal
 		var btn = document.getElementById("myBtn");
 		
 		var btn_2 = document.getElementById("myBtn-2");
 		
+		var btn_3 = document.getElementById("myBtn-3");
+		
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
 		
 		var span_2 = document.getElementsByClassName("close")[1];
+		
+		var span_3 = document.getElementsByClassName("close")[2];
 		
 		// When the user clicks the button, open the modal 
 		btn.onclick = function() {
@@ -900,6 +936,10 @@
 		
 		btn_2.onclick = function() {
 			  modal_2.style.display = "block";
+		}
+		
+		btn_3.onclick = function() {
+			  modal_3.style.display = "block";
 		}
 		
 		// When the user clicks on <span> (x), close the modal
@@ -911,6 +951,10 @@
 			  modal_2.style.display = "none";
 		}
 		
+		span_3.onclick = function() {
+			  modal_3.style.display = "none";
+		}
+		
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
 		    if (event.target == modal) {
@@ -919,6 +963,10 @@
 		    
 		    if (event.target == modal_2) {
 		        modal_2.style.display = "none";
+		    }
+		    
+		    if (event.target == modal_3) {
+		        modal_3.style.display = "none";
 		    }
 		}
 	</script>

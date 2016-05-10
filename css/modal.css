@@ -13,7 +13,8 @@
     /* Fallback color */
     background-color: rgb(0,0,0); 
     /* Black w/ opacity */
-    background-color: rgba(23,62,113,1); 
+    /*background-color: rgba(23,62,113,0.95); */
+    background-color: #30BBE0;
     transition: opacity 2s linear;
 }
 
@@ -30,7 +31,7 @@
     /*-webkit-animation-duration: 0.8s;*/
     /*animation-name: animatetop;*/
     /*animation-duration: 0.8s*/
-    animation: fadein 3.2s;
+    animation: fadein 2.5s;
     /*transition: opacity s linear; */
     font-family: "Microsoft JhengHei";
 }
@@ -113,7 +114,7 @@
 .modal-header {
     border-radius: 4px 4px 0px 0px;
     padding: 2px 16px;
-    background-color: #a94442;
+    background-color: #C16200;
     color: white;
     border: none;
 }
